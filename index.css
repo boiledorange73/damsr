@@ -1,0 +1,94 @@
+
+.plink {
+  padding: 0 0.25em;
+}
+.plink a:link,
+.plink a:visited {
+  color: #00f;
+}
+
+.ball {
+  padding: 0 0.25em;
+}
+
+HTML, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#MAIN {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+#TOP {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.25em 0.5em;
+  border: solid 1px #666;
+  background: #ccc;
+}
+
+#TOP p {
+  margin: 0;
+  padding: 0;
+}
+
+.olPopup {
+  font-size: 14px;
+}
+
+.olPopup h2 {
+  font-size: 1em;
+  margin: 8px 1px 0 1px;
+  font-weight: normal;
+  border: solid 1px #f90;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  background: none;
+}
+
+.olImageLoadError {
+    background: none;
+    visibility: hidden !important;
+}
+
+.olControlAttribution {
+  position: absolute;
+  bottom: 2px !important;
+  left: 2px;
+  font-size: 9pt;
+  padding: 2px;
+}
+
+#MOBILEZOOM {
+  position: absolute;
+  right: 0.25em;
+  bottom: 0.25em;
+  -moz-user-select: none;
+  cursor: default;
+  z-index: 2001;
+}
+
+#MOBILEZOOM div {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  font-size: 48px;
+  border: solid 1px #666;
+  border-top-color: #999;
+  border-left-color: #999;
+  background: #ccc;
+}
+
