@@ -149,6 +149,14 @@
     e_p1_a.href = "http://www.river.go.jp/";
     e_p1_a.target = "_blank";
     e_p1_a.appendChild(document.createTextNode("国土交通省【川の防災情報】"));
+    // TOP / p1 / finds
+    e_p1.appendChild(document.createTextNode(" / "));
+    e_p1.appendChild(document.createTextNode("加工: "));
+    var e_p1_a2 = document.createElement("a");
+    e_p1.appendChild(e_p1_a2);
+    e_p1_a2.href = "http://www.finds.jp/dam/";
+    e_p1_a2.target = "_blank";
+    e_p1_a2.appendChild(document.createTextNode("農研機構 http://www.finds.jp/dam/"));
     // TOP / p2
     var e_p2 = document.createElement("p");
     top.appendChild(e_p2);
@@ -241,7 +249,7 @@
       {
         layername: 'pntms-900913',
         type: 'png',
-        attribution: '<a target=\"_blank\" href="http://www.finds.jp/wsdocs/pnwms/index.html.ja">地名WMS</a>',
+        attribution: '<a target=\"_blank\" href="http://www.finds.jp/mapprv/index.html.ja">地図画像配信サービス</a>',
         isBaseLayer: false
       },
       {
@@ -254,7 +262,7 @@
       {
         layername: "KBN25000ANF-900913",
         type: "png",
-        attribution: '<a target=\"_blank\" href="http://www.finds.jp/wsdocs/kibanwms/index.html.ja">基盤地図情報(平20業使、第449号)</a>',
+        attribution: '<a target=\"_blank\" href="http://www.finds.jp/mapprv/index.html.ja">地図画像配信サービス</a>',
         isBaseLayer: true
       }
     );
