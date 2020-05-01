@@ -36,11 +36,11 @@
   var kmlsettings = [
     {
       "name": "ダム貯水率",
-      "url": "http://www.finds.jp/data/kml/damsr.kml"
+      "url": "http://aginfo.cgk.affrc.go.jp/data/kml/damsr.kml"
     },
     {
       "name": "ダム貯水(欠測等非表示)",
-      "url": "http://www.finds.jp/data/kml/damsrlim.kml"
+      "url": "http://aginfo.cgk.affrc.go.jp/data/kml/damsrlim.kml"
     }
   ];
 
@@ -154,9 +154,9 @@
     e_p1.appendChild(document.createTextNode("加工: "));
     var e_p1_a2 = document.createElement("a");
     e_p1.appendChild(e_p1_a2);
-    e_p1_a2.href = "http://www.finds.jp/dam/";
+    e_p1_a2.href = "http://aginfo.cgk.affrc.go.jp/dam/";
     e_p1_a2.target = "_blank";
-    e_p1_a2.appendChild(document.createTextNode("農研機構 http://www.finds.jp/dam/"));
+    e_p1_a2.appendChild(document.createTextNode("農研機構 http://aginfo.cgk.affrc.go.jp/dam/"));
     // TOP / p2
     var e_p2 = document.createElement("p");
     top.appendChild(e_p2);
@@ -169,7 +169,7 @@
         e_span.appendChild(e_img);
         e_img.width = "16";
         e_img.height = "16";
-        e_img.src = "http://www.finds.jp/data/kml/c16x16" +
+        e_img.src = "http://aginfo.cgk.affrc.go.jp/data/kml/c16x16" +
           balls[n]["type"] + ".gif";
         e_span.appendChild(document.createTextNode(": "+balls[n]["text"]));
       }
@@ -245,11 +245,11 @@
 
     var pnwms = new OpenLayers.Layer.TMS(
       "地名",
-      "http://www.finds.jp/ws/tmc/",
+      "http://aginfo.cgk.affrc.go.jp/ws/tmc/",
       {
         layername: 'pntms-900913',
         type: 'png',
-        attribution: '<a target=\"_blank\" href="http://www.finds.jp/mapprv/index.html.ja">地図画像配信サービス</a>',
+        attribution: '<a target=\"_blank\" href="http://aginfo.cgk.affrc.go.jp/mapprv/index.html.ja">地図画像配信サービス</a>',
         isBaseLayer: false
       },
       {
@@ -258,11 +258,11 @@
     );
     var kibanwms = new OpenLayers.Layer.TMS(
       "KIBAN 25000 TMS",
-      "http://www.finds.jp/ws/tmc/",
+      "http://aginfo.cgk.affrc.go.jp/ws/tmc/",
       {
         layername: "KBN25000ANF-900913",
         type: "png",
-        attribution: '<a target=\"_blank\" href="http://www.finds.jp/mapprv/index.html.ja">地図画像配信サービス</a>',
+        attribution: '<a target=\"_blank\" href="http://aginfo.cgk.affrc.go.jp/mapprv/index.html.ja">地図画像配信サービス</a>',
         isBaseLayer: true
       }
     );
